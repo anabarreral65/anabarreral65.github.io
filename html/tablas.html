@@ -1,0 +1,342 @@
+<html>
+    <head>
+        <title>Video en html</title>
+        <link rel="stylesheet" href="../CSS/estilo%20mi%20pagina.css" type="text/css">
+        <style type="text/css">
+            #table1{
+                width: 80%;
+                text-align: center;
+                margin:0 auto;
+                color: #855E6E;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 5px;
+            }
+            #table1 th{
+                background-color: #FFB2C1;
+            }
+            #table1 td{
+                background-color: #CE7095;
+                color: #F7F1E1;
+                text-align: left;
+                border-style: solid;
+                border-bottom-color: #FFB2C1;
+                border-width: 3px;
+                border-radius: 5px;
+                margin: 25px;
+            }
+           /* #tabla1{
+                color:#855E6E;
+            }
+            #tabla1 td{
+                color: beige;
+                height: 50px;
+                padding: 20px;
+                border-spacing: 20px;
+            }*/
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: #855E6E;
+            }
+            .table2{
+                width: : 900px;
+                border-collapse: collapse;
+                border-style: inset;
+                margin-left: 70px; 
+            }
+            .table2 th{
+                border-style: dotted;
+            }
+            .table2 td{
+                border-style: dotted;
+            }
+            #tabla_zebra{
+                width: 100%;
+            }
+            #tabla_zebra tr:nth-child(even){
+                background-color: #CE7095;
+            }
+            #tabla_zebra tr:nth-child(odd){
+                background-color: #855E6E;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #FFB2C1;
+            }
+            .tabla_hover{
+                width: 100%; 
+                border-style:dashed;
+                border-collapse:collapse;
+                border-bottom-color: #855E6E;
+            }
+            .tabla_hover th td{
+                background-color: #855E6E;
+                color: #F7F1E1;
+                border-style:ridge;
+                padding: 30px;
+            }
+            .tabla_hover td{
+                background-color: #CE7095;
+                padding: 5px;
+                border-style:ridge;
+            }
+            .tabla_hover tr:hover{
+                background-color: #855E6E;
+                color:#855E6E;
+                border: solid;
+            }            
+
+        </style>
+    
+    </head>
+    <body>
+        <header>
+            <h1>Tablas en html</h1>
+        </header>
+        <nave>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/listas.html">Listas</a></li>
+                <li><a href="../html/tablas.html">Tablas</a></li>
+                <li><a href="../html/enlaces.html">Enlaces</a></li>
+                <li><a href="../html/imagenes.html">Imagenes</a></li>
+                <li><a href="../html/audio.html">Audio</a></li>
+                <li><a href="../html/video.html">Video</a></li>
+                <li><a href="../html/Formulario.html">Formularios</a></li>
+            </ul>
+        </nave>
+        <main>
+           <section style="overflow: auto">
+                <h2>Amigos de la carrera</h2>
+                <p>Tener amigos en la carrera significa contar con un grupo de personas que comparten intereses y objetivos similares, lo que crea un sentido de camaradería y apoyo mutuo. Estas amistades pueden enriquecer la experiencia académica, ya que puedes compartir ideas, estudiar juntos, colaborar en proyectos y disfrutar de actividades relacionadas con el diseño gráfico. Además, tener amigos en la misma carrera fomenta un ambiente positivo donde se pueden intercambiar experiencias, motivarse y enfrentar desafíos académicos juntos. Estas conexiones también pueden extenderse más allá del ámbito académico, creando vínculos duraderos basados ​​en intereses compartidos y experiencias comunes.</p>
+               <table border="1" id="table1">
+               <thead >
+                       <tr>
+                           <th>Matricula</th>
+                           <th>Nombre</th>
+                           <th>Apellido Paterno</th>
+                           <th>Apellido materno</th>
+                           <th>Colegio</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                        <tr>
+                            <td>201643052</td>
+                            <td>America</td>
+                            <td>Urrieta</td>
+                            <td>Camacho</td>
+                            <td>Diseño Gráfico</td>
+                       </tr>
+                       <tr>
+                            <td>201869045</td>
+                            <td>Karina</td>
+                            <td>Puente</td>
+                            <td>Navarrete</td>
+                            <td>Diseño Gráfico</td>
+                       </tr>
+                       <tr>
+                            <td>201696170</td>
+                            <td>Oscar</td>
+                            <td>Ortiz</td>
+                            <td>Villasaldo</td>
+                            <td>Diseño Gráfico</td>
+                       </tr>
+                       <tr>
+                            <td>201748592</td>
+                            <td>Navanhy</td>
+                            <td>Mendieta</td>
+                            <td>Pérez</td>
+                            <td>Diseño Gráfico</td>
+                       </tr>
+                   </tbody>
+                   <tfoot>
+                   </tfoot>
+               </table>
+               
+            </section>
+                <section style="overflow: auto">
+                <h2>Convivio</h2>
+                <p>La planificación de un convivio es una excelente oportunidad para fortalecer lazos entre amigos, compañeros de estudio o colegas. Para asegurar que el evento sea exitoso y disfrutable para todos, es fundamental organizar cada detalle de manera efectiva, por ello se realizo la siguiente tabla para saber quién y cuánto ya se coopero:</p>
+                    <table id=".table2" class="table2"> 
+                        <thead>
+                            <tr>
+                                <th style="width: 150px">Nombre</th>
+                                <th style="width: 30px">Edad</th>
+                                <th style="width: 200px"; colspan="2">Teléfono</th>
+                                <th style="width: 30px;">Cooperación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>America Uriieta</td>
+                                <td style="text-align:center; padding:0px">26</td>
+                                <td>222 635 4865</td>
+                                <td>222 635 4865</td>
+                                <td class="celda_centrada" style="text-align: center" padding="0px" background-color="#855E6E">$100</td>
+                            </tr>
+                            <tr>
+                                <td>Karina Puente</td>
+                                <td style="text-align:center; padding:0px">25</td>
+                                <td>294 625 3185</td>
+                                <td>294 625 3185</td>
+                                <td class="celda_centrada" style="text-align: center" padding="0px" background-color="#855E6E">$50</td>
+                            </tr>
+                            <tr>
+                                <td>Oscar Ortiz</td>
+                                <td style="text-align:center; padding:0px">26</td>
+                                <td>222 987 3567</td>
+                                <td>222 987 3567</td>
+                                <td class="celda_centrada" style="text-align: center" padding="0px" background-color="#855E6E">$70</td>
+                            </tr>
+                            <tr>
+                                <td>Navanhy Mendieta</td>
+                                <td style="text-align:center; padding:0px">25</td>
+                                <td>222 485 3595</td>
+                                <td>222 485 3595</td>
+                                <td class="celda_centrada" style="text-align: center" padding="0px" background-color="#855E6E">$120</td>
+                            </tr>
+                            <tr>
+                                <td>Karen Barrera</td>
+                                <td style="text-align:center; padding:0px">25</td>
+                                <td>222 485 3595</td>
+                                <td>222 485 3595</td>
+                                <td class="celda_centrada" style="text-align: center" padding="0px" background-color="#855E6E">$120</td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Total</td>
+                                <td></td>
+                                <td class="celda_centrada" style="background-color: #F7F1E1; COLOR: #855E6E">$460</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+            </section>
+                <section>
+                <h2>¿Qué llevara cada quién?</h2>
+                <p>Cada persona llevara una cosa diferente y se anotara el tipo de música que quieren que se ponga, así todos podran disfrutar del convivio.</p>
+                    <table id="tabla_zebra">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>¿Qué llevara?</th>
+                                <th>¿Qué música?</th>
+                                <th>Hora de llegada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Amerita Urrieta</td>
+                                <td>26</td>
+                                <td>Papas</td>
+                                <td>Reguetón</td>
+                                <td style="text-align: center">9:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Karina Puente</td>
+                                <td>25</td>
+                                <td>Refrescos</td>
+                                <td>Pop</td>
+                                <td style="text-align: center">8:30pm</td>
+                            </tr>
+                            <tr>
+                                <td>Oscar Ortiz</td>
+                                <td>26</td>
+                                <td>Cervezas</td>
+                                <td>Rap</td>
+                                <td style="text-align: center">9:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>Navanhy Mendieta</td>
+                                <td>26</td>
+                                <td>Comida</td>
+                                <td>Rock</td>
+                                <td style="text-align: center">9:30pm</td>
+                            </tr>
+                            <tr>
+                                <td>Karen Barrera</td>
+                                <td>25</td>
+                                <td>Botella</td>
+                                <td>reguetón</td>
+                                <td style="text-align: center">9:30pm</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+            </section>
+            <section>
+                <h2>Datos para torneo de baloncesto</h2>
+                <p>En la siguiente tabla se encuentran los nombres de los integrantes del equipo de baloncesto, las cuales participarán en el torneo que se realizará en Tlaxcala: </p>
+                 <table id="" class="tabla_hover">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Equipo</th>
+                                <th>Teléfono</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody style="color: #F7F1E1">
+                            <tr>
+                                <td>Sandra Luna Díaz</td>
+                                <td style="text-align: center; padding: 0px">19</td>
+                                <td>Femenil</td>
+                                <td>2226598745</td>
+                                <td>Luna.San@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Martina Juárez Gil</td>
+                                <td style="text-align: center; padding: 0px">20</td>
+                                <td>Femenil</td>
+                                <td>2229486578</td>
+                                <td>Mar.Ju@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Alma Lima Limón</td>
+                                <td style="text-align: center; padding: 0px">18</td>
+                                <td>Femenil</td>
+                                <td>2220138054</td>
+                                <td>Limalimon@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Teresa Monarca Herrera</td>
+                                <td style="text-align: center; padding: 0px">21</td>
+                                <td>Femenil</td>
+                                <td>2220350970</td>
+                                <td>Mona_tere@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Adrian Mercado Gil</td>
+                                <td style="text-align: center; padding: 0px">20</td>
+                                <td>Varonil</td>
+                                <td>2223050064</td>
+                                <td>Adrian.gil@gmail.com</td>
+                            </tr>
+                             <tr>
+                                <td>Miguel Duarte Mendez</td>
+                                <td style="text-align: center; padding: 0px">20</td>
+                                <td>Varonil</td>
+                                <td>2220320460085</td>
+                                <td>Miguedu@gmail.com</td>
+                            </tr>
+                             <tr>
+                                <td>José Terón Soledad</td>
+                                <td style="text-align: center; padding: 0px">21</td>
+                                <td>Varonil</td>
+                                <td>2223335987164</td>
+                                <td>jose.teron@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por Karen Barrera</h5>
+        </footer>
+    </body>
+</html>

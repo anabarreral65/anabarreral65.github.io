@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FORMULARIO HTML</title>
+	<link href="../css/estilo mi pagina.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+			width: 60%;
+			height: auto;
+			padding: 20px;
+			background-color: #EC9496;
+			color:#52111D;
+			margin: 0 auto;
+				
+		}
+		label{
+			padding-bottom: 10px;
+			padding-top: 10px;
+			color:aliceblue;
+			font-weight: bolder;eight: 
+		}
+		label,input{
+			display: block;
+			margin-left: 10px;
+		}
+		input[type=text],input[type=password], input[type=number] select{
+			width: 90%;
+			color: chocolate;
+			padding: 6px;
+			font-weight: bold;
+			border: 2px solid aqua;
+			margin-bottom: 20px;
+			border-radius: 10px;
+			background-color: aqua;
+		}
+		input[type=submit]{
+			width: 30%;
+			background-color: aqua;
+			padding- : 50px;
+			margin: 0 auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color:#571138;
+			font-weight: bolder;
+			border-radius: 6px;
+		}
+		input[type=text]:focus, input[type=password]:focus{
+			background-color:brown;
+			border: 6px solid brown;
+		}
+		input[type=range]{
+			margin: 0 auto;
+			padding: 10px;
+		}
+		select{
+			background-color:aqua;
+			color: #2E0935;
+			border: 15x;
+		}
+		input[type=number]{
+			background-color: aqua;
+			color: #2E0935;
+			border: 40px;
+		}
+		form2{
+			background-color: #EC9496;
+			border:none;
+			margin: 0 auto;
+		}
+		input[type=textfield],input[type=Genero]{
+			background-color: aqua;
+		}
+		input[type=Nombre]{
+			background-color: aqua;
+			color: black;
+		}
+		input[type=Genero]{
+			background-color: aqua;
+			color: black;
+		}
+		input[type=Nombre]:focus{
+			background-color:brown;
+			border-radius: 6px;
+			border: none;
+		}
+		input[type=Genero]:focus{
+			background-color:brown;
+			border-radius: 6px;
+		}
+		table{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin: 0 auto;
+			border: none;
+		}
+		input, lebel{
+			padding-top: 5px;
+		}
+		input{
+			background-color: aqua;
+			border-radius: 6px;
+		}
+	</style>
+</head>
+
+<body>
+<header>
+	<h1>FORMULARIOS EN HTML</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="../html/listas.html">Listas</a></li>
+		<li><a href="..//html/tablas.html">Tablas</a></li>
+		<li><a href="..//html/enlaces.html">Enlaces</a></li>
+		<li><a href="..//html/imagenes.html">Imágenes</a></li>
+		<li><a href="..//html/audio.html">Audio</a></li>
+		<li><a href="..//html/video.html">Video</a></li>
+		<li><a href="..//html/Formulario.html">Formulario</a></li>
+	</ul>
+</nav>
+<main>
+  <section>
+    <h2>Inicio de sesión&nbsp;</h2>
+  <p>Este formulario está diseñado para iniciar sesión en la página. Por favor, ingresa tus datos en los campos correspondientes para acceder a tu cuenta. Si aún no tienes una cuenta, considera registrarte para disfrutar de todas las funcionalidades y beneficios.</p>
+	<form action="" method="get">
+		<label id="">Nombre:</label>
+		<input type="text" id="Nombre" name="Nombre">
+		<label id="">Contraseña:</label>
+		<input type="password" id="contrasena" name="contrasena" >
+		<input type="submit" value="enviar">
+    </form>
+</section>
+    <section>
+    <h2>Posición en la que juegas</h2>
+    <p>Menciona cuál es la posición en la que juegas usualmente, en cuál te gustaría mejorar o en cuál quieres jugar en los partidos:</p>
+    <form id="form2" name="form2" method="post">
+		<label for="textfield">Posición &nbsp;</label>
+		<input type="Posición" name="textfield" id="textfield">
+		<label for="Genero"><br>Género</label>
+		<input type="Genero" name="textfield" id="textfield">
+		<table  width="200" border="1" style="width: 80%">
+			<tr>
+				<td><input type="radio" name="Genero" value="Fem" id="Genero_0"></td>
+			<td><label>Femenino</label></td>
+			
+			</tr>
+			<tr>
+				<td><input type="radio" name="Genero" value="mas" id="Genero_1"></td>
+				<td><label>Masculino</label></td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="Genero" value="otro" id="Genero_2"></td>
+			<td><label>Otro</label></td>
+			</tr>
+		</table>
+		<input type="submit" name="submit" id="submit" value="Enviar">
+	  </form>
+	  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Describe brevemente por qué quieres integrarte al equipo y por qué quieres acceder a los videos de entrenamiento a distancia:</p>
+   <form id="form1" name="form1" method="post">
+		<label form="Describir">¿Por qué quieres entrar al equipo?</label>
+		<input type="text" name="Nombre" id="Nombre">
+		<label for="number">Edad:</label>
+		<input type="number" name="number" id="number" min="18" max="85">
+		<label for="Estado">Estado</label>
+	   <select name="Estado" id="Estado">
+			<option value="Aguascalientes">Aguascalientes</option>
+			<option value="Colima">Colima</option>
+			<option value="Durango">Durango</option>
+			<option value="Jalisco">Jalisco</option>
+			<option value="Nayarit">Nayarit</option>
+			<option value="Puebla">Puebla</option>
+		</select>
+		<input type="submit" name="submit" id="submit" value="Enviar">
+	   </form>
+  </section>
+  
+<section>
+	<h2>Formulario de usuario</h2>
+	 <p>Completa el ultimo formulario para poder tomar en cuenta en el quipo que prefieres estar y sobre el uniforme que se hará para el torneo, se tomara en cuenta la opinión de todos los jugadores y se tomara una desicón en base a lo que la mayoría decida.</p> 
+	 <form id="form3" action="" method="post">
+		  <label for="nombre">1. ¿Cuál es tu nombre completo?</label>
+		  <input type="text" id="nombre" name="nombre" required>
+		 <label for="number">Número de jersay</label>
+		<input type="number" name="number" id="number" min="0" max="99">
+		  <label for="fecha-nacimiento"> 3. ¿Cúal es tu fecha de nacimiento?</label>
+		<input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+		  <label for="comenzaste-jugar">4. ¿Cuándo comenzaste a jugar? </label> 
+		  <input type="date" id="comenzaste-jugar" name="comenzaste-jugar">
+		  <label for="juegos-favoritos">5. ¿Qué es lo que más te gusta de jugar?</label> 
+		  <input type="text" id="juegos-favoritos" name="juegos-favoritos">
+		  <label for="color-favorito"> 6. Selecciona tu color favorito para una jersey <b></b>:</label> 
+		 <input type="color" id="color-favorito" name="color-favorito"><br><br>
+		  <label for="telefono">7. ¿Cuál es tu número de contacto?</label> 
+		  <input type="tel" id="telefono" name="telefono" placeholder="Tu  número de teléfono"><br><br>	
+		 <label for="textfield">¿A qué equipo quieres entrar?</lavel>
+		
+  		<label for="Baloncesto"> Baloncesto</label><br>
+		<input type="checkbox" id="Baloncesto" name="Baloncesto" value="Baloncesto">
+  		<label for="Futbol"> Futbol</label><br>
+  		<input type="checkbox" id="vehicle2" name="Futbol" value="Futbol">
+		<label for="Volivol"> Volivol</label><br>
+  		<input type="checkbox" id="vehicle3" name="Volivol" value="Volivol">
+		  <label for="homepage">9. ¿Quién es tu deportista favorito?</label><input  type="url" id="homepage" name="homepage"> 
+		  <label for="mejora">10. ¿Qué tan bueno consideras que eres? </label> 
+		  <input type="range" id="horasDormir" name="horasDormir" min="1"  max="12" value="7" required>  
+		  <input type="submit" name="submit" id="submit" value="Enviar">
+	</form>
+</section>
+</main>
+<footer>
+  <h5>Elaborado por Karen Barrera</h5>
+</footer>
+</body>
+</html>
